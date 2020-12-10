@@ -1,5 +1,14 @@
-Download the .dmg package 
-Open the terminal and put command line : pkgutil --expand 
-Drag the package update to the terminal 
-Create a IMovie folder and drag to terminal 
-Change the info a .zip file
+*Detailed Procedures*
+- Download the .dmg package (namely, from: https://support.apple.com/kb/DL1574?viewlocale=en_US&locale=en_US)
+- Open the terminal (say, HD/Applications/Utilities/Terminal.app) and put command line : pkgutil --expand 
+- Drag the package update (say, /Volumes/iMovie\ 9.0.9/iMovie9.0.9Update.pkg, usually) to the terminal 
+- Create a IMovie folder and drag it to the terminal
+- The complete command reads "pkgutil --expand /Volumes/iMovie\ 9.0.9/iMovie9.0.9Update.pkg /Users/(MyName)/Desktop/iMovie". And add "/iMovie" to its end
+- Click and open the iMovie folder created just now where there is another iMovie folder. Open it and click it with two fingers which prompts out a manue and click "Show Package Contents", which leads to open another window named "iMovie9.0.9Update.pkg". 
+- In this new window, change the name of a "payload" into "payload.zip" by clicking it with two fingers and select "Get Info", which provides "Payload.zip Info" window where you can put .zip end to Name & Extension field. Return and click Add button simply.
+- Double click the "Payload.zip" file and unzip it.
+- After unzipping, a folder named "Payload 2" is added thereto. In the folder, you will find "Application" folder
+- Open the "Application" folder, the distination "iMovie.app" is achieved. Double click it and test it if it works well as usual. 
+- Usually it works soundly well, expecially on MacOS X EI Capitan Version 10.11.6 with Mid-2009 MacBook Pro.
+
+Reference: SHaaNaa, iMovie Hack | Install iMovie 9.0.9 for Mac OS X versions, 5 Jul 2020, https://www.youtube.com/watch?v=Bhno16ppjKo, accessed Dec 10, 2020.
